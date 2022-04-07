@@ -18,7 +18,7 @@ body {
    
 }
 .container{
-    width: 1200;
+    width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
@@ -45,6 +45,7 @@ h1, h2, h3, p{
 .container .main-nav{
     display: flex;
     align-items: center;
+    border: 2px solid red;
     
 }
 
@@ -52,6 +53,7 @@ h1, h2, h3, p{
 
 .logo{
     color: var(--title-text-color);
+
 }
 .logoweb{
     color: var(--accent-color) ;
@@ -186,8 +188,24 @@ h1, h2, h3, p{
     cursor: pointer;}
 
 /*Section*/
+.feature-list{
+    display: flex;
+
+}
+.feature-list .item{
+    width: 270px;
+}
+.feature-list .item +.item{
+    margin-left: 30px;
+}
 .section{ 
     background-color: var(--portfolio-bg-color);
+}
+.image-list{
+    display: flex;
+}
+.image-list .item + .item{
+    margin-left: 30px;
 }
 .section-commands{
     background-color: var(--button-bg-color);
@@ -231,8 +249,6 @@ h1, h2, h3, p{
     color: var(--primery-text-color);
     text-decoration: none;
     line-height: 1.71;
-    margin-top: 0;
-    margin-bottom: 0;
 
 }
 
@@ -272,7 +288,17 @@ h1, h2, h3, p{
     cursor: default;
     margin-bottom: 20px;
  }
-
+ .picture-list{
+     display: flex;
+     flex-wrap: wrap;
+ }
+.picture-list .item{
+    width: 370px;
+    margin-right: 30px;
+}
+.picture-list .item:nth-child(3n){
+    margin-right: 0;
+}
 /*Footer*/
  footer{
     background-color: var(--primery-bg--color);
