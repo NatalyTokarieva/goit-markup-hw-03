@@ -9,7 +9,7 @@
     --border-image: #EEEEEE; 
 }
 
-body {
+body{
     background-color:var(--button-text-color);
     color:var(--title-text-color);
     font-family: 'Roboto', sans-serif;
@@ -251,18 +251,19 @@ h1, h2, h3, p {
     text-align: center;
     margin-bottom: 50px;
     }
-    .visually-hidden { 
-        position: absolute; 
-        width: 1px; 
-        height: 1px; 
-        margin: -1px; 
-        border: 0; 
-        padding: 0; 
-        white-space: nowrap; 
-        clip-path: inset(100%); 
-        clip: rect(0 0 0 0); 
-        overflow: hidden; 
-      } 
+    
+.visually-hidden { 
+     position: absolute; 
+     width: 1px; 
+     height: 1px; 
+     margin: -1px; 
+     border: 0; 
+     padding: 0; 
+     white-space: nowrap; 
+     clip-path: inset(100%); 
+     clip: rect(0 0 0 0); 
+     overflow: hidden; 
+} 
 
 .title{
     font-weight: 700;
@@ -330,7 +331,7 @@ h1, h2, h3, p {
     margin-right: 30px;
     margin-bottom: 30px;
     background: var(--button-text-color);
-    border: 1px solid var(--border-image);
+    border-bottom: 1px solid var(--border-image);
 
 }
 .picture-list .item:nth-child(3n){
