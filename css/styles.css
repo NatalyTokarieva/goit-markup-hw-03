@@ -368,6 +368,7 @@ h1, h2, h3, p {
  .link-footer{
      font-style: normal;
      margin-bottom: 20px;
+     text-decoration: none;
  }
 .link-footer1{
      text-decoration: none;
